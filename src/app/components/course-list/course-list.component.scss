@@ -1,0 +1,39 @@
+.list {
+  &Title {
+    margin: 0px;
+    padding: 15px;
+  }
+
+  &ItemsWrapper {
+    background-color: #f2f3f7;
+    padding: 0px 20px;
+  }
+
+  &AddCourse {
+    display: flex;
+    align-items: center;
+  }
+
+  &LoadMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 15px;
+    background-color: #f2f3f7;
+
+    span {
+      cursor: pointer;
+      text-decoration: underline;
+      color: blue;
+    }
+  }
+
+  &AddCourse {
+    &Wrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}

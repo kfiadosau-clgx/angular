@@ -1,0 +1,19 @@
+<h1 class="listTitle">Courses</h1>
+
+<div class="listItemsWrapper">
+  <div><input placeholder="Text to search" /> <button>Search</button></div>
+
+  <div class="listAddCourseWrapper">
+    <button>Add course</button>
+  </div>
+
+  <app-course-item
+    *ngFor="let course of courses"
+    [course]="course"
+    (newItemEvent)="onDelete($event)"
+  ></app-course-item>
+
+  <div class="listLoadMore">
+    <span>Load More</span>
+  </div>
+</div>
