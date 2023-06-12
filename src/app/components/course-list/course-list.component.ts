@@ -9,7 +9,7 @@ import { Course } from '../course-item/course-item.component';
 export class CourseListComponent implements OnInit {
   public courses: Course[] = [];
 
-  public onDelete(id?: string | number) {
+  public onDelete(id?: string | number): void {
     console.log(id);
   }
 

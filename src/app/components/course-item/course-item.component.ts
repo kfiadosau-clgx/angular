@@ -17,10 +17,10 @@ export class CourseItemComponent implements OnInit {
   @Input()
   public course?: Course;
 
-  @Output() newItemEvent = new EventEmitter<string | number>();
+  @Output() courseDelete = new EventEmitter<string | number>();
 
   onDelete(value?: string | number) {
-    this.newItemEvent.emit(value);
+    this.courseDelete.emit(value);
   }
 
   ngOnChanges(): void {

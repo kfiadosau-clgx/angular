@@ -1,5 +1,5 @@
 .course {
-  &Wrapper {
+  &__wrapper {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -7,21 +7,21 @@
     margin: 20px 0px;
   }
 
-  &Top {
-    &Wrapper {
+  &__top {
+    &_wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    &Info {
+    &_info {
       display: flex;
       column-gap: 10px;
     }
   }
 
-  &Bottom {
-    &Wrapper {
+  &__bottom {
+    &_wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
