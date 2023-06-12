@@ -1,0 +1,17 @@
+.footer {
+  &Wrapper {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #424452;
+    padding: 20px 0;
+    color: white;
+    width: 100%;
+  }
+
+  &Text {
+    margin-right: 30px;
+  }
+}

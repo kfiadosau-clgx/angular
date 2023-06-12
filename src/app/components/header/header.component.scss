@@ -1,0 +1,17 @@
+.header {
+  &Wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #424452;
+    padding: 20px;
+    color: white;
+  }
+
+  &Control {
+    &Wrapper {
+      display: flex;
+      column-gap: 20px;
+    }
+  }
+}
