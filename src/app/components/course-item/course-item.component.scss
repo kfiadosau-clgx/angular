@@ -1,27 +1,40 @@
 .course {
-  &Wrapper {
+  &__wrapper {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
     background-color: white;
     margin: 20px 0px;
+
+    &__topRated {
+      background-color: gold;
+    }
   }
 
-  &Top {
-    &Wrapper {
+  &__top {
+    &_wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    &Info {
+    &_info {
       display: flex;
       column-gap: 10px;
     }
+
+    &_title {
+      &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 5px;
+      }
+    }
   }
 
-  &Bottom {
-    &Wrapper {
+  &__bottom {
+    &_wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;

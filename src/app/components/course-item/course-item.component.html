@@ -1,17 +1,26 @@
-<div class="courseWrapper">
-  <div class="courseTopWrapper">
-    <div>{{ course?.title }}</div>
-    <div class="courseTopInfo">
-      <div>{{ course?.duration }}</div>
-      <div>{{ course?.creationDate }}</div>
+<div
+  class="course__wrapper"
+  *ngIf="course"
+  [courseStatus]="course.creationDate"
+  [ngClass]="{ course__wrapper__topRated: course.topRated }"
+>
+  <div class="course__top_wrapper">
+    <div class="course__top_title__wrapper">
+      <div>{{ course.title | uppercase }}</div>
+      <span *ngIf="course.topRated" class="star">&#9733;</span>
+    </div>
+
+    <div class="course__top_info">
+      <div>{{ course.duration | duration }}</div>
+      <div>{{ course.creationDate | date : "d MMM, y" }}</div>
     </div>
   </div>
 
-  <div class="courseBottomWrapper">
-    <div>{{ course?.description }}</div>
+  <div class="course__bottom_wrapper">
+    <div>{{ course.description }}</div>
     <div>
       <button>Edit</button>
-      <button (click)="onDelete?.(course?.id ?? '')">Delete</button>
+      <button (click)="onDelete(course.id)">Delete</button>
     </div>
   </div>
 </div>
