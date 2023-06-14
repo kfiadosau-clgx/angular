@@ -20,6 +20,7 @@ describe('CourseItemComponent', () => {
       creationDate: '2023-01-01',
       duration: 60,
       description: 'Test description',
+      topRated: true,
     };
     fixture.detectChanges();
   });

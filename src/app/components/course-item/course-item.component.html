@@ -1,9 +1,18 @@
-<div class="course__wrapper" *ngIf="course">
+<div
+  class="course__wrapper"
+  *ngIf="course"
+  [courseStatus]="course.creationDate"
+  [ngClass]="{ course__wrapper__topRated: course.topRated }"
+>
   <div class="course__top_wrapper">
-    <div>{{ course.title }}</div>
+    <div class="course__top_title__wrapper">
+      <div>{{ course.title | uppercase }}</div>
+      <span *ngIf="course.topRated" class="star">&#9733;</span>
+    </div>
+
     <div class="course__top_info">
-      <div>{{ course.duration }}</div>
-      <div>{{ course.creationDate }}</div>
+      <div>{{ course.duration | duration }}</div>
+      <div>{{ course.creationDate | date : "d MMM, y" }}</div>
     </div>
   </div>
 

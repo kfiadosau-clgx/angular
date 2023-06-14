@@ -5,6 +5,10 @@
     row-gap: 10px;
     background-color: white;
     margin: 20px 0px;
+
+    &__topRated {
+      background-color: gold;
+    }
   }
 
   &__top {
@@ -17,6 +21,15 @@
     &_info {
       display: flex;
       column-gap: 10px;
+    }
+
+    &_title {
+      &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 5px;
+      }
     }
   }
 
